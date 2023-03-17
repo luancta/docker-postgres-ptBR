@@ -12,6 +12,3 @@ RUN echo LC_ALL=pt_BR >> /etc/environment
 COPY postgresql.conf /setup/postgresql.conf
 
 COPY entrypoint/config-db.sh /docker-entrypoint-initdb.d/
-COPY entrypoint/config-roles.sql /docker-entrypoint-initdb.d/
-COPY entrypoint/vacuum.sql /docker-entrypoint-initdb.d/
-
