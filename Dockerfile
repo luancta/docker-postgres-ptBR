@@ -1,5 +1,4 @@
-FROM postgres:9.6.13
-MAINTAINER tairoroberto@hotmail.com
+FROM postgres:13.10
 
 RUN apt-get update && apt-get install -y curl
 
